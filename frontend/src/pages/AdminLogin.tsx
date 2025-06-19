@@ -1,4 +1,3 @@
-
 import { AdminAuthPage } from "@/components/auth/admin-auth";
 
 const AdminLogin = () => {

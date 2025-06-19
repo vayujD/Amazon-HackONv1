@@ -1,4 +1,3 @@
-
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -27,7 +26,7 @@ const adminNavigation = [
 ];
 
 const sellerNavigation = [
-  { name: "Seller Dashboard", href: "seller", icon: Users },
+  { name: "Seller Dashboard", href: "seller-dashboard", icon: Users },
 ];
 
 export function RoleBasedSidebar({ activeTab, onTabChange }: RoleBasedSidebarProps) {

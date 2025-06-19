@@ -1,5 +1,5 @@
-
 import { useState } from "react";
+import { useNavigate, Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -10,14 +10,22 @@ import { Alert, AlertDescription } from "@/components/ui/alert";
 import { useAuth } from "@/hooks/use-auth";
 
 export function AdminAuthPage() {
+  const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const [name, setName] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   
-  const { signIn, signUp } = useAuth();
+  const { signIn, signUp, user } = useAuth();
+
+  // If user is already authenticated and is an admin, redirect to dashboard
+  if (user?.role === 'admin') {
+    navigate('/dashboard');
+    return null;
+  }
 
   const handleSignIn = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -28,6 +36,8 @@ export function AdminAuthPage() {
     
     if (error) {
       setError(error.message);
+    } else {
+      navigate('/dashboard');
     }
     
     setLoading(false);
@@ -42,11 +52,18 @@ export function AdminAuthPage() {
       return;
     }
 
+    if (!name.trim()) {
+      setError("Name is required");
+      return;
+    }
+
     setLoading(true);
-    const { error } = await signUp(email, password, 'admin');
+    const { error } = await signUp(email, password, name, 'admin');
     
     if (error) {
       setError(error.message);
+    } else {
+      navigate('/dashboard');
     }
     
     setLoading(false);
@@ -144,6 +161,17 @@ export function AdminAuthPage() {
               <TabsContent value="signup" className="space-y-4 mt-4">
                 <form onSubmit={handleSignUp} className="space-y-4">
                   <div className="space-y-2">
+                    <Label htmlFor="admin-name">Full Name</Label>
+                    <Input
+                      id="admin-name"
+                      type="text"
+                      placeholder="Enter your full name"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                      required
+                    />
+                  </div>
+                  <div className="space-y-2">
                     <Label htmlFor="admin-signup-email">Email</Label>
                     <Input
                       id="admin-signup-email"
@@ -192,9 +220,9 @@ export function AdminAuthPage() {
         <div className="text-center mt-6">
           <p className="text-sm text-gray-300">
             Seller?{" "}
-            <a href="/seller-login" className="text-amazon-orange cursor-pointer hover:underline">
+            <Link to="/seller-login" className="text-amazon-orange cursor-pointer hover:underline">
               Access Seller Portal
-            </a>
+            </Link>
           </p>
         </div>
       </div>

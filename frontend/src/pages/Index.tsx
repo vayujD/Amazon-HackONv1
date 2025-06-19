@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "@/hooks/use-auth";
@@ -17,6 +16,8 @@ const Index = () => {
   const [activeTab, setActiveTab] = useState("dashboard");
 
   useEffect(() => {
+    console.log('Auth state:', { user, userRole, loading });
+    
     if (!loading && !user) {
       navigate('/');
       return;
@@ -24,8 +25,10 @@ const Index = () => {
 
     // Set default tab based on user role
     if (userRole === 'seller') {
-      setActiveTab("seller");
+      console.log('Setting seller dashboard tab');
+      setActiveTab("seller-dashboard");
     } else if (userRole === 'admin') {
+      console.log('Setting admin dashboard tab');
       setActiveTab("dashboard");
     }
   }, [user, userRole, loading, navigate]);
@@ -46,13 +49,22 @@ const Index = () => {
   }
 
   const renderContent = () => {
+    console.log('Rendering content for role:', userRole);
+    
     // Sellers can only access the seller dashboard
-    if (userRole === 'seller') {
-      return <SellerDashboard />;
+    if (userRole === 'seller' || userRole === 'user') {
+      console.log('Rendering seller dashboard');
+      switch (activeTab) {
+        case "seller-dashboard":
+          return <SellerDashboard />;
+        default:
+          return <SellerDashboard />;
+      }
     }
 
     // Admins can access all admin screens
     if (userRole === 'admin') {
+      console.log('Rendering admin content for tab:', activeTab);
       switch (activeTab) {
         case "dashboard":
           return <MarketplaceDashboard />;
@@ -110,6 +122,7 @@ const Index = () => {
       }
     }
 
+    console.log('No matching role found, showing unauthorized message');
     return <div>Unauthorized access</div>;
   };
 
