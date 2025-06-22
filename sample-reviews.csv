@@ -1,0 +1,11 @@
+reviewText,rating,reviewerId,productId,productName,sellerId,sellerName,reviewDate,ipAddress,verifiedPurchase
+"This product is absolutely amazing! I love everything about it. The quality is outstanding and it exceeded all my expectations. Highly recommend!",5,user123,prod001,Wireless Headphones,seller001,AudioTech Pro,2024-01-15,192.168.1.100,true
+"Terrible product, don't waste your money. Broke after 2 days and customer service was useless. Worst purchase ever!",1,user456,prod001,Wireless Headphones,seller001,AudioTech Pro,2024-01-16,192.168.1.101,true
+"Great value for money. Works as expected and delivery was fast. Would buy again.",4,user789,prod002,Bluetooth Speaker,seller002,SoundMaster,2024-01-17,192.168.1.102,true
+"AMAZING PRODUCT!!! BEST EVER!!! BUY NOW!!! DON'T WAIT!!! FIVE STARS!!!",5,user999,prod003,Phone Case,seller003,CasePro,2024-01-18,192.168.1.103,false
+"The product arrived on time and works perfectly. Good quality for the price. Satisfied with my purchase.",4,user111,prod004,Laptop Stand,seller004,OfficeGear,2024-01-19,192.168.1.104,true
+"Not bad, but could be better. The design is okay but the material feels cheap. Expected more for this price.",3,user222,prod005,Desk Lamp,seller005,LightCo,2024-01-20,192.168.1.105,true
+"INCREDIBLE!!! LIFE CHANGING!!! EVERYONE NEEDS THIS!!! 10/10 RECOMMEND!!!",5,user333,prod006,Water Bottle,seller006,HydratePro,2024-01-21,192.168.1.106,false
+"Average product. Does what it says but nothing special. Price is reasonable.",3,user444,prod007,USB Cable,seller007,CableKing,2024-01-22,192.168.1.107,true
+"Disappointed with this purchase. The product doesn't work as advertised and feels flimsy.",2,user555,prod008,Phone Charger,seller008,PowerTech,2024-01-23,192.168.1.108,true
+"Perfect! Exactly what I was looking for. High quality and great customer service.",5,user666,prod009,Keyboard,seller009,KeyMaster,2024-01-24,192.168.1.109,true 

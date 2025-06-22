@@ -88,4 +88,31 @@ exports.login = async (req, res) => {
   } catch (error) {
     res.status(500).json({ message: 'Error logging in', error: error.message });
   }
+};
+
+// Get user profile
+exports.getProfile = async (req, res) => {
+  try {
+    // The user ID is available from the auth middleware
+    const userId = req.user.userId;
+    
+    // Find user by ID
+    const user = await User.findById(userId).select('-password');
+    if (!user) {
+      return res.status(404).json({ message: 'User not found' });
+    }
+
+    res.json({
+      success: true,
+      user: {
+        _id: user._id,
+        email: user.email,
+        name: user.name,
+        role: user.role,
+        createdAt: user.createdAt
+      }
+    });
+  } catch (error) {
+    res.status(500).json({ message: 'Error fetching profile', error: error.message });
+  }
 }; 

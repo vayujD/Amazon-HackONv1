@@ -1,0 +1,22 @@
+{
+  "sellerId": "SELLER001",
+  "sellerName": "Electronics Plus",
+  "orderId": "ORDER123456",
+  "customerId": "CUST789",
+  "violationType": "fake_product",
+  "violationDescription": "Customer received counterfeit wireless headphones instead of genuine product",
+  "severity": "high",
+  "orderValue": 89.99,
+  "orderDate": "2024-01-15T10:30:00Z",
+  "violationDate": "2024-01-20T14:15:00Z",
+  "resolutionStatus": "pending",
+  "customerCompensation": 0,
+  "sellerPenalty": 0,
+  "evidence": {
+    "customerPhotos": ["photo1.jpg", "photo2.jpg"],
+    "customerDescription": "The headphones I received are clearly fake - poor build quality, no brand markings, and they don't work properly",
+    "sellerResponse": "We are investigating this issue and will respond within 24 hours",
+    "platformInvestigation": "Under review by platform team"
+  },
+  "impactScore": 75
+} 

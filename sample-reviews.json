@@ -1,0 +1,62 @@
+[
+  {
+    "reviewText": "This product is absolutely amazing! I love everything about it. The quality is outstanding and it exceeded all my expectations. Highly recommend!",
+    "rating": 5,
+    "reviewerId": "user123",
+    "productId": "prod001",
+    "productName": "Wireless Headphones",
+    "sellerId": "seller001",
+    "sellerName": "AudioTech Pro",
+    "reviewDate": "2024-01-15",
+    "ipAddress": "192.168.1.100",
+    "verifiedPurchase": true
+  },
+  {
+    "reviewText": "Terrible product, don't waste your money. Broke after 2 days and customer service was useless. Worst purchase ever!",
+    "rating": 1,
+    "reviewerId": "user456",
+    "productId": "prod001",
+    "productName": "Wireless Headphones",
+    "sellerId": "seller001",
+    "sellerName": "AudioTech Pro",
+    "reviewDate": "2024-01-16",
+    "ipAddress": "192.168.1.101",
+    "verifiedPurchase": true
+  },
+  {
+    "reviewText": "Great value for money. Works as expected and delivery was fast. Would buy again.",
+    "rating": 4,
+    "reviewerId": "user789",
+    "productId": "prod002",
+    "productName": "Bluetooth Speaker",
+    "sellerId": "seller002",
+    "sellerName": "SoundMaster",
+    "reviewDate": "2024-01-17",
+    "ipAddress": "192.168.1.102",
+    "verifiedPurchase": true
+  },
+  {
+    "reviewText": "AMAZING PRODUCT!!! BEST EVER!!! BUY NOW!!! DON'T WAIT!!! FIVE STARS!!!",
+    "rating": 5,
+    "reviewerId": "user999",
+    "productId": "prod003",
+    "productName": "Phone Case",
+    "sellerId": "seller003",
+    "sellerName": "CasePro",
+    "reviewDate": "2024-01-18",
+    "ipAddress": "192.168.1.103",
+    "verifiedPurchase": false
+  },
+  {
+    "reviewText": "The product arrived on time and works perfectly. Good quality for the price. Satisfied with my purchase.",
+    "rating": 4,
+    "reviewerId": "user111",
+    "productId": "prod004",
+    "productName": "Laptop Stand",
+    "sellerId": "seller004",
+    "sellerName": "OfficeGear",
+    "reviewDate": "2024-01-19",
+    "ipAddress": "192.168.1.104",
+    "verifiedPurchase": true
+  }
+] 
