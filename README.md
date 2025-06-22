@@ -2,32 +2,32 @@
 
 A comprehensive AI-powered platform for detecting fake reviews and managing seller risk in e-commerce marketplaces. Built with React, Node.js, Python ML services, and MongoDB.
 
-## 🚀 Features
+## Features
 
-### 🔍 **Fake Review Detection**
+### **Fake Review Detection**
 - **ML-Powered Analysis**: Uses TensorFlow models to detect bot-generated and copy-paste reviews
 - **Real-time Processing**: Instant analysis of review submissions
 - **Confidence Scoring**: Provides confidence levels for each detection
 - **Multiple Detection Methods**: Combines ML predictions with rule-based analysis
 
-### 📊 **Analytics Dashboard**
+### **Analytics Dashboard**
 - **Review Analytics**: Real-time insights into review patterns and fraud detection
 - **Seller Risk Assessment**: Comprehensive risk scoring based on multiple factors
 - **Auto-refresh**: Live data updates with countdown timer
 - **Interactive Charts**: Visual representation of analytics data
 
-### 👥 **Multi-Role System**
+### **Multi-Role System**
 - **Admin Dashboard**: Complete system management and oversight
 - **Seller Dashboard**: Individual seller analytics and data upload
 - **User Management**: Secure authentication and role-based access
 
-### 📈 **Data Management**
+### **Data Management**
 - **Batch Processing**: Upload multiple sellers and reviews at once
 - **CSV Support**: Easy data import from spreadsheet files
 - **Real-time Validation**: Instant feedback on data quality
 - **Risk Scoring**: Automated assessment of seller risk levels
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
@@ -50,7 +50,7 @@ A comprehensive AI-powered platform for detecting fake reviews and managing sell
                        └─────────────────┘
 ```
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - **React 18** with TypeScript
@@ -76,7 +76,7 @@ A comprehensive AI-powered platform for detecting fake reviews and managing sell
 - **MongoDB** for data persistence
 - **Mongoose** for schema management
 
-## 📋 Prerequisites
+## Prerequisites
 
 Before you begin, ensure you have the following installed:
 
@@ -85,7 +85,7 @@ Before you begin, ensure you have the following installed:
 - **MongoDB** (local installation or MongoDB Atlas)
 - **Git**
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Step 1: Clone the Repository
 
@@ -176,7 +176,7 @@ The backend will start on port 3000.
 - **Backend API**: http://localhost:3000
 - **ML Service**: http://localhost:5001
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### Port Conflicts
 
@@ -276,7 +276,7 @@ pip list
 python app.py --debug
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Amazon-HackONv1/
@@ -302,7 +302,7 @@ Amazon-HackONv1/
 └── README.md              # This file
 ```
 
-## 🔐 Environment Variables
+## Environment Variables
 
 ### Backend (.env)
 ```env
@@ -319,7 +319,7 @@ VITE_API_URL=http://localhost:3000
 VITE_ML_SERVICE_URL=http://localhost:5001
 ```
 
-## 🚀 Available Scripts
+## Available Scripts
 
 ### Backend
 ```bash
@@ -340,7 +340,7 @@ npm run preview      # Preview production build
 python app.py        # Start Flask development server
 ```
 
-## 📊 Database Schema
+## Database Schema
 
 ### Users Collection
 ```javascript
@@ -400,7 +400,7 @@ python app.py        # Start Flask development server
 }
 ```
 
-## 🔧 Development
+## Development
 
 ### Adding New Features
 
@@ -424,7 +424,7 @@ python app.py        # Start Flask development server
 - **Frontend**: Use TypeScript strict mode
 - **Python**: Follow PEP 8 guidelines
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -432,11 +432,11 @@ python app.py        # Start Flask development server
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🆘 Support
+## Support
 
 If you encounter any issues:
 
@@ -447,7 +447,7 @@ If you encounter any issues:
 
 For additional help, please open an issue on GitHub.
 
-## 👥 Team Nameless
+## Team Nameless
 
 - **Vayuj Dhir** 
 
