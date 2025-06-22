@@ -447,9 +447,9 @@ If you encounter any issues:
 
 For additional help, please open an issue on GitHub.
 
-## 👥 Team
+## 👥 Team Nameless
 
-- **Vayuj Dhir** - Full Stack Developer & ML Engineer
+- **Vayuj Dhir** 
 
 ---
 
